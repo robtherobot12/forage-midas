@@ -2,8 +2,10 @@ package com.jpmc.midascore.foundation;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.io.Serializable;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Transaction {
+public class Transaction implements Serializable {
     private long senderId;
     private long recipientId;
     private float amount;
