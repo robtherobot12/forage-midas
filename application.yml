@@ -1,11 +1,14 @@
 general:
   kafka-topic: trader-updates
+  incentive-url: http://localhost:8080/incentive
 #logging:
 #  level:
 #    org.springframework.kafka: DEBUG
 #    org.apache.kafka: INFO
 #    org.hibernate.SQL: DEBUG
 
+server:
+  port: 33400
 spring:
   kafka:
     producer:
